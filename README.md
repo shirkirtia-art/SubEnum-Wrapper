@@ -19,8 +19,8 @@ For this script to work, you must have the following tools installed and accessi
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/AutoSubEnum.git](https://github.com/YOUR_USERNAME/AutoSubEnum.git)
-   cd AutoSubEnum
+   git clone https://github.com/shirkirtia-art/SubEnum-Wrapper.git
+   cd SubEnum-Wrapper
 
 2. Make the script executable:
     ```bash
