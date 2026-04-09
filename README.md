@@ -21,3 +21,32 @@ For this script to work, you must have the following tools installed and accessi
    ```bash
    git clone [https://github.com/YOUR_USERNAME/AutoSubEnum.git](https://github.com/YOUR_USERNAME/AutoSubEnum.git)
    cd AutoSubEnum
+
+2. Make the script executable:
+    ```bash
+    chmod +x subenum.sh
+
+3. Usage
+Run the script by passing the target domain as an argument:
+
+   ```bash
+   ./subenum.sh example.com
+
+Example Output
+
+   ```bash
+      [+] Starting subdomain enumeration for hackerone.com
+      [+] Output will be saved to subdomains.txt (duplicates removed)
+      [+] Running subfinder...
+      [+] Running assetfinder...
+      [+] Running sublist3r...
+      [+] Running findomain...
+      [+] Combining results and removing duplicates...
+      [+] Done! Found 29 unique subdomains.
+      [+] Saved to: subdomains.txt
+
+      First 15 subdomains:
+      a.hackerone.com
+      api.hackerone.com
+      app.hackerone.com
+      ...
