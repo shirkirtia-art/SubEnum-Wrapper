@@ -1,2 +1,23 @@
-# SubEnum-Wrapper
-A fast and efficient bash wrapper that automates subdomain enumeration by combining Subfinder, Assetfinder, Sublist3r, and Findomain into a single, deduplicated output.
+# SubEnum-Wrapper 🔍
+
+A powerful bash wrapper script designed to streamline the reconnaissance phase of bug bounty hunting and penetration testing. **AutoSubEnum** runs multiple subdomain enumeration tools concurrently, combines their results, cleans the formatting, and outputs a single, deduplicated list of valid subdomains.
+
+## Features
+* **Multi-Tool Integration:** Leverages `subfinder`, `assetfinder`, `sublist3r`, and `findomain`.
+* **Smart Filtering:** Uses regex to ensure only valid subdomains of the target are kept.
+* **Clean Output:** Automatically removes carriage returns, converts to lowercase, and strips duplicate entries.
+* **System Friendly:** Uses secure temporary directories for processing and automatically cleans up after execution.
+
+## Prerequisites
+For this script to work, you must have the following tools installed and accessible in your system's `$PATH`:
+* [Subfinder](https://github.com/projectdiscovery/subfinder)
+* [Assetfinder](https://github.com/tomnomnom/assetfinder)
+* [Sublist3r](https://github.com/aboul3la/Sublist3r) (Python 3 version)
+* [Findomain](https://github.com/Findomain/Findomain)
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/YOUR_USERNAME/AutoSubEnum.git](https://github.com/YOUR_USERNAME/AutoSubEnum.git)
+   cd AutoSubEnum
